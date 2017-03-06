@@ -75,7 +75,7 @@ export class AppComponent implements OnInit {
   constructor(private heroService: HeroService) {}
   // heroes = this.heroService.getHeroes();
   getHeroes(): void{
-    this.heroService.getHeroes().then(
+    this.heroService.getHeroesSlowly().then(
       heroes => this.heroes = heroes;
     );
   }
